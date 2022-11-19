@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace leetcode-grind-client build",
+    "dev": "yarn workspace leetcode-grind-server dev",
+    "dev:debug": "yarn workspace leetcode-grind-server dev:debug",
+    "heroku-postbuild": "yarn workspace leetcode-grind-client build",
+    "start": "yarn workspace leetcode-grind-server start",
+    "dev:cypress": "yarn workspace leetcode-grind-server dev:e2e",
+    "e2e:open": "yarn workspace leetcode-grind-e2e e2e:open",
+    "e2e:run": "yarn workspace leetcode-grind-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^14.19"
+  }
+}
